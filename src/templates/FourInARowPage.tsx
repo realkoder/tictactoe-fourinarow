@@ -5,7 +5,7 @@ const FourInARowPage = () => {
 
     return (
         <div className="flex flex-col items-center justify-center text-center">
-            <h1>It's Four In A Row Time!</h1>
+            <h1>It is Four In A Row Time!</h1>
 
             <FourInARowBoard />
 
