@@ -21,10 +21,6 @@ const TicTacToeBoard = ({ }: TicTacToeBoardProps) => {
         setIsPlayerX(cur => !cur);
     } 
 
-    const handleMoveWinner = () => {
-
-    }
-
     return (
         <div className="m-8">
             <h2 className="">It is player {isPlayerX ? "X" : "O"} turn!</h2>
