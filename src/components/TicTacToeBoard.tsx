@@ -27,7 +27,7 @@ const TicTacToeBoard = ({ }: TicTacToeBoardProps) => {
 
     return (
         <div className="m-8">
-            <h2 className="">It's player {isPlayerX ? "X" : "O"} turn!</h2>
+            <h2 className="">It is player {isPlayerX ? "X" : "O"} turn!</h2>
 
             <hr className="my-4 border-t border-gray-400"></hr>
 
