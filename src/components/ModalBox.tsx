@@ -15,7 +15,7 @@ const ModalBox = ({ isOpen, onClose, children }: ModalBoxProps) => {
     };
 
     useEffect(() => {
-        setIsModalOpen(isOpen); // Update the state when the prop changes
+        setIsModalOpen(isOpen);
     }, [isOpen]);
 
     if (!isModalOpen) return null;

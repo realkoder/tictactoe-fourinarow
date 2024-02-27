@@ -4,7 +4,7 @@ export const generateBoardGrid = (row: number, col: number) => {
 }
 
 
-export type Grid = string[][];
+type Grid = string[][];
 
 export const checkFourInRow = (grid: Grid) => {
     const numRows = grid.length;
@@ -15,7 +15,7 @@ export const checkFourInRow = (grid: Grid) => {
         for (let col = 0; col <= numCols - 4; col++) {
             const sequence = grid[row].slice(col, col + 4).join('');
             if (sequence === 'XXXX' || sequence === 'OOOO') {
-                return sequence[0]; // Returns the winning player
+                return sequence[0];
             }
         }
     }
@@ -25,7 +25,7 @@ export const checkFourInRow = (grid: Grid) => {
         for (let row = 0; row <= numRows - 4; row++) {
             const sequence = [grid[row][col], grid[row + 1][col], grid[row + 2][col], grid[row + 3][col]].join('');
             if (sequence === 'XXXX' || sequence === 'OOOO') {
-                return sequence[0]; // Returns the winning player
+                return sequence[0];
             }
         }
     }
@@ -35,7 +35,7 @@ export const checkFourInRow = (grid: Grid) => {
         for (let col = 0; col <= numCols - 4; col++) {
             const sequence = [grid[row][col], grid[row + 1][col + 1], grid[row + 2][col + 2], grid[row + 3][col + 3]].join('');
             if (sequence === 'XXXX' || sequence === 'OOOO') {
-                return sequence[0]; // Returns the winning player
+                return sequence[0];
             }
         }
     }
@@ -45,7 +45,7 @@ export const checkFourInRow = (grid: Grid) => {
         for (let col = numCols - 1; col >= 3; col--) {
             const sequence = [grid[row][col], grid[row + 1][col - 1], grid[row + 2][col - 2], grid[row + 3][col - 3]].join('');
             if (sequence === 'XXXX' || sequence === 'OOOO') {
-                return sequence[0]; // Returns the winning player
+                return sequence[0];
             }
         }
     }
