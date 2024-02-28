@@ -4,7 +4,7 @@ export const generateBoardGrid = (row: number, col: number) => {
 }
 
 
-export const checkThreeInRow = (grid: Grid): string | null => {
+export const checkThreeInRow = (grid: grid): string | null => {
     const numRows = grid.length;
     const numCols = grid[0].length;
 
